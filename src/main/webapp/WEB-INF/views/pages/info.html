@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket info</title>
+</head>
+<body>
+<p>TICKET INFO:</p>
+<p th:text="${'ID: ' + ticket.getId()}">VALUE</p>
+<p th:text="${'Date: ' + ticket.getDate()}">VALUE</p>
+<p th:text="${'Time: ' + ticket.getTime()}">VALUE</p>
+<p th:text="${'Flight number: ' + ticket.getFlightNumber()}">VALUE</p>
+<p th:text="${'Status: ' + ticket.getStatus()}">VALUE</p>
+<br/>
+<a href="/pages/main/">Main page</a>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>New Ticket</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/pages}" th:object="${ticket}">
+  <label for="date">Enter date: </label>
+  <input type="date" th:field="*{date}" id="date"/>
+  <div style="color:red" th:if="${#fields.hasErrors('date')}" th:errors="*{date}">Name Error</div>
+  <br/>
+  <label for="time">Enter time: </label>
+  <input type="time" th:field="*{time}" id="time"/>
+  <div style="color:red" th:if="${#fields.hasErrors('time')}" th:errors="*{time}">Name Error</div>
+  <br/>
+  <label for="flightNumber">Enter flight number: </label>
+  <input type="number" th:field="*{flightNumber}" id="flightNumber"/>
+  <div style="color:red" th:if="${#fields.hasErrors('flightNumber')}" th:errors="*{flightNumber}">Name Error</div>
+  <br/>
+  <input type="submit" value="Buy"/>
+</form>
+
+</body>
+</html>

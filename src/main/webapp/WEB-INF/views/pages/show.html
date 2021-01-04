@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket info</title>
+</head>
+<body>
+<form name="idform">
+  <label for="inputID">Enter ticket ID: </label>
+  <input type="text" name="id" id="inputID">
+  <input type="button" value="Enter" onclick="location.href='/pages/info/'
+  +escape(document.forms['idform'].elements['id'].value)">
+</form>
+</body>
+</html>
