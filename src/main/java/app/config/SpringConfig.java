@@ -58,8 +58,8 @@ public class SpringConfig implements WebMvcConfigurer {
 
     managerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
     managerDataSource.setUrl("jdbc:mysql://localhost:3306/tickets?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
-    managerDataSource.setUsername("yulian");
-    managerDataSource.setPassword("yulian");
+    managerDataSource.setUsername("username");
+    managerDataSource.setPassword("password");
 
     return managerDataSource;
   }
